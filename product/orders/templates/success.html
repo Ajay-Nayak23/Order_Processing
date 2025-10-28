@@ -1,0 +1,115 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Order Submitted</title>
+</head>
+<body>
+    <h2>✅ Order Submitted Successfully!</h2>
+    <p>Your Order ID: <strong>{{ order_id }}</strong></p>
+    <a href="{% url 'order_list' %}">Create another order</a>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Submitted</title>
+  <style>
+    /* ---------- Base Styles ---------- */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #74ABE2, #5563DE);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #333;
+    }
+
+    /* ---------- Container ---------- */
+    .success-container {
+      background: #fff;
+      width: 400px;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    /* ---------- Success Emoji ---------- */
+    .success-icon {
+      font-size: 50px;
+      color: #2ecc71;
+      margin-bottom: 15px;
+      animation: popIn 0.6s ease;
+    }
+
+    /* ---------- Heading ---------- */
+    h2 {
+      font-size: 22px;
+      margin-bottom: 15px;
+      color: #2d3436;
+    }
+
+    /* ---------- Order ID ---------- */
+    p {
+      font-size: 16px;
+      margin-bottom: 25px;
+    }
+
+    strong {
+      color: #5563DE;
+    }
+
+    /* ---------- Button ---------- */
+    a {
+      display: inline-block;
+      text-decoration: none;
+      background: #5563DE;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    a:hover {
+      background: #4051c4;
+      transform: translateY(-2px);
+    }
+
+    /* ---------- Animations ---------- */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes popIn {
+      0% { transform: scale(0.6); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 480px) {
+      .success-container {
+        width: 90%;
+        padding: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="success-container">
+    <div class="success-icon">✅</div>
+    <h2>Order Submitted Successfully!</h2>
+    <p>Your Order ID: <strong>{{ order_id }}</strong></p>
+    <a href="{% url 'order_list' %}">Create Another Order</a>
+  </div>
+</body>
+</html>
