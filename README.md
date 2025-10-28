@@ -11,18 +11,6 @@ The system simulates how e-commerce or enterprise apps handle orders **asynchron
 
 ---
 
-## 🏗️ Architecture
-
-```mermaid
-flowchart LR
-    A[👤 User] --> B[Django Web App (Producer)]
-    B --> C[SQL Server — Orders Table]
-    B --> D[ActiveMQ Queue /queue/order.processing]
-    D --> E[Python Consumer Service]
-    E --> C
-
-    classDef server fill:#F5F5F5,stroke:#999,stroke-width:1px;
-    class B,C,D,E server;
 Workflow:
 
 The user submits an order through the Django form.
@@ -98,6 +86,7 @@ order_processing_system/
 │   │   ├── forms.py
 │   │   └── templates/
 │   │       └── order.html
+|   |       └── success.html
 │   └── manage.py
 │
 ├── consumer/
