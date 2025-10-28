@@ -76,24 +76,23 @@ processed_at
 
 ## 🧩 Project Structure
 
-order_processing_system/
-│
-├── producer/ # Django project (Producer service)
-│ ├── orders/ # Orders app
-│ │ ├── models.py # Order model (database schema)
-│ │ ├── views.py # Handles order form & message publishing
-│ │ ├── forms.py # Django form for order submission
-│ │ └── templates/ # HTML templates
-│ │ ├── order.html # Order form page
-│ │ └── success.html # Success message page
-│ └── manage.py # Django management script
-│
-├── consumer/ # Consumer service
-│ └── consumer.py # Listens to ActiveMQ and processes orders
-│
-├── requirements.txt # Python dependencies
-└── README.md # Project documentation
-
+    order_processing_system/
+    │
+    ├── producer/ # Django project (Producer service)
+    │ ├── orders/ # Orders app
+    │ │ ├── models.py # Order model (database schema)
+    │ │ ├── views.py # Handles order form & message publishing
+    │ │ ├── forms.py # Django form for order submission
+    │ │ └── templates/ # HTML templates
+    │ │ ├── order.html # Order form page
+    │ │ └── success.html # Success message page
+    │ └── manage.py # Django management script
+    │
+    ├── consumer/ # Consumer service
+    │ └── consumer.py # Listens to ActiveMQ and processes orders
+    │
+    ├── requirements.txt # Python dependencies
+    └── README.md # Project documentation
 
 
 
