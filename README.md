@@ -75,8 +75,8 @@ created_at
 processed_at
 
 🧩 Project Structure
-bash
-Copy code
+
+ 
 order_processing_system/
 │
 ├── producer/                  # Django project
@@ -94,6 +94,10 @@ order_processing_system/
 │
 ├── requirements.txt
 └── README.md
+
+
+
+
 🚀 Setup & Installation
 1️⃣ Start ActiveMQ (Docker)
 bash
